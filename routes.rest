@@ -62,6 +62,6 @@ DELETE https://cse341-lesson5-2chr.onrender.com/data/<data_id> HTTP/1.1
 
 // Lesson 5 Swagger API
 ###
-https://localhost:8080/api-docs
+http://localhost:8080/api-docs
 ###
 https://cse341-lesson5-2chr.onrender.com/api-docs
