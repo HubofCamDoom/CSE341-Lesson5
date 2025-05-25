@@ -5,8 +5,8 @@ const doc = {
     title: 'Data management API',
     description: 'Swagger API for CSE341 student Camden'
   },
-  host: 'localhost:8080/api-docs',
-  schemes: ['http']
+  host: 'https://cse341-lesson5-2chr.onrender.com/api-docs',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';

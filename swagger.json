@@ -5,10 +5,10 @@
     "description": "Swagger API for CSE341 student Camden",
     "version": "1.0.0"
   },
-  "host": "localhost:8080/api-docs",
+  "host": "https://cse341-lesson5-2chr.onrender.com/api-docs",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/data/": {
