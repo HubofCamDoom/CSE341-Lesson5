@@ -3,7 +3,7 @@
 ### GET all
 GET http://localhost:8080/data
 ### GET by ID
-GET http://localhost:8080/data/<data_id>
+GET http://localhost:8080/data/data_id
 ### POST
 POST http://localhost:8080/data HTTP/1.1
 content-type: application/json
@@ -36,7 +36,7 @@ GET https://cse341-lesson5-2chr.onrender.com/data
 ### GET by ID
 GET https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
 ### POST
-POST https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+POST https://cse341-lesson5-2chr.onrender.com/data HTTP/1.1
 content-type: application/json
 
 {
@@ -47,7 +47,7 @@ content-type: application/json
     "unitSize": "medium"
 }
 ### PUT by ID
-PUT https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+PUT https://cse341-lesson5-2chr.onrender.com/data/6832aa5185260994665ade33 HTTP/1.1
 content-type: application/json
 
 {
@@ -58,7 +58,7 @@ content-type: application/json
     "unitSize": "medium"
 }
 ### DELETE by ID
-DELETE https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+DELETE https://cse341-lesson5-2chr.onrender.com/data/6832aa5185260994665ade33 HTTP/1.1
 
 // Lesson 5 Swagger API
 ###
