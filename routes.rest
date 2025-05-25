@@ -9,37 +9,6 @@ POST http://localhost:8080/data HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Arthur",
-    "lastName":"Pendragon",
-    "email":"apendragon@camelot.net",
-    "favoriteColor":"Blue",
-    "birthday":"1/1/650"
-}
-### PUT by ID
-PUT http://localhost:8080/data/<data_id> HTTP/1.1
-content-type: application/json
-
-{
-    "firstName":"Arthur",
-    "lastName":"Pendragon",
-    "email":"apendragon@camelot.net",
-    "favoriteColor":"Orange",
-    "birthday":"6/15/550"
-}
-### DELETE by ID
-DELETE http://localhost:8080/data/<data_id> HTTP/1.1
-
-// RENDER
-
-### GET all
-GET https://cse341-lesson5-2chr.onrender.com/data
-### GET by ID
-GET https://cse341-lesson5-2chr.onrender.com/data/<data_id> HTTP/1.1
-### POST
-POST https://cse341-lesson5-2chr.onrender.com/data/<data_id> HTTP/1.1
-content-type: application/json
-
-{
     "unitName": "Medium scout car",
     "unitCost": "30 points",
     "unitType": "vehicle",
@@ -47,7 +16,7 @@ content-type: application/json
     "unitSize": "medium"
 }
 ### PUT by ID
-PUT https://cse341-lesson5-2chr.onrender.com/data/<data_id> HTTP/1.1
+PUT http://localhost:8080/data/data_id HTTP/1.1
 content-type: application/json
 
 {
@@ -58,7 +27,38 @@ content-type: application/json
     "unitSize": "medium"
 }
 ### DELETE by ID
-DELETE https://cse341-lesson5-2chr.onrender.com/data/<data_id> HTTP/1.1
+DELETE http://localhost:8080/data/data_id HTTP/1.1
+
+// RENDER
+
+### GET all
+GET https://cse341-lesson5-2chr.onrender.com/data
+### GET by ID
+GET https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+### POST
+POST https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+content-type: application/json
+
+{
+    "unitName": "Medium scout car",
+    "unitCost": "30 points",
+    "unitType": "vehicle",
+    "upgrades": "none",
+    "unitSize": "medium"
+}
+### PUT by ID
+PUT https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
+content-type: application/json
+
+{
+    "unitName": "Medium scout car",
+    "unitCost": "35 points",
+    "unitType": "vehicle",
+    "upgrades": "long-range-radio",
+    "unitSize": "medium"
+}
+### DELETE by ID
+DELETE https://cse341-lesson5-2chr.onrender.com/data/data_id HTTP/1.1
 
 // Lesson 5 Swagger API
 ###
